@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Catégorie</th>
+            <th>Prix</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let produit of products">
+            <td>{{ produit.id }}</td>
+            <td>{{ produit.nom }}</td>
+            <td>{{ produit.categorie }}</td>
+            <td>{{ produit.prix | currency: 'EUR' }}</td>
+        </tr>
+    </tbody>
+</table>
