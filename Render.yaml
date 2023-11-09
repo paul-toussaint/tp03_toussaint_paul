@@ -1,0 +1,6 @@
+version: 1
+static_sites:
+  - name: tp03_toussaint_paul
+    use_gitignore: false
+    build_command: null
+    publish_directory: ./
